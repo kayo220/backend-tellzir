@@ -27,7 +27,6 @@ export class CalculatePriceUseCase {
         }
 
         let payedTimeWithPlan = (data.duration - plan.free_time_limit);//overtime 
-        console.log("Overtime", payedTimeWithPlan)
         if (payedTimeWithPlan > 0) {//charging with 10% additional
             payedTimeWithPlan = (payedTimeWithPlan * priceByMinute.charge);
             payedTimeWithPlan += payedTimeWithPlan * 0.10
@@ -36,8 +35,6 @@ export class CalculatePriceUseCase {
         }
 
         const payedTimeWithoutPlan = (data.duration) * priceByMinute.charge;
-        console.log("Pay with plan: ", payedTimeWithPlan)
-        console.log("Pay without plan: ", payedTimeWithoutPlan)
 
         return {
             plan: plan.name,

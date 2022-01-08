@@ -2,7 +2,6 @@ import { createConnection, getConnection } from 'typeorm';
 const connection = {
     async create() {
         if (process.env.NODE_ENV == 'test') {
-            console.log("Aqui")
             await createConnection({
                 "type": "sqlite",
                 "database": "./src/database/test_database.sqlite",
@@ -18,8 +17,6 @@ const connection = {
             });
 
         } else {
-            console.log("Aqui2")
-
             await createConnection();
         }
     },
