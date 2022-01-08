@@ -2,6 +2,7 @@ import { DDD } from "../../entities/DDD";
 import { IDDDRepository } from "../IDDDRepository";
 
 export class DDDINMemoryRepository implements IDDDRepository {
+
     private DDDs: DDD[] = [];
     private static dddInMemoryRepository: DDDINMemoryRepository;
     static get Instance() {//singleton
@@ -22,5 +23,8 @@ export class DDDINMemoryRepository implements IDDDRepository {
     async list(): Promise<DDD[]> {
         return this.DDDs;
     }
-
+    async searchById(id: string): Promise<any> {
+        const ddd = this.DDDs.find(element => element.id == id);
+        return ddd;
+    }
 }

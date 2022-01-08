@@ -11,7 +11,6 @@ export class ListDDDController {
     async handle(request: Request, response: Response): Promise<Response> {
         try {
             const ddds = await this.listDDDUseCase.execute()
-            console.log(ddds);
             return response.status(200).json(ViewDDD.renderMany(ddds));
         } catch (err) {
             return response.status(400).json({

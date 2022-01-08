@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { calculatePriceController } from "./useCases/CalculatePrice";
 import { createDDDController } from "./useCases/CreateDDD";
 import { createPlanController } from "./useCases/CreatePlan";
 import { createPriceController } from "./useCases/CreatePrice";
@@ -30,5 +31,8 @@ router.get('/price', (request, response) => {
 })
 router.get('/price/:from/:to', (request, response) => {
     return searchPriceController.handle(request, response);
+})
+router.post('/calculate/charge', (request, response) => {
+    return calculatePriceController.handle(request, response);
 })
 export { router }

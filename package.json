@@ -6,12 +6,16 @@
   "scripts": {
     "start-dev": "ts-node-dev --transpile-only --respawn --ignore-watch node_modules  src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
-    "test": "jest  --runInBand"
+    "test": "jest  --runInBand",
+    "seed:config": "ts-node ./node_modules/typeorm-seeding/dist/cli.js config",
+    "seed:run": "ts-node ./node_modules/typeorm-seeding/dist/cli.js seed"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.2",
     "sqlite3": "^5.0.2",
     "typeorm": "^0.2.41",
+    "typeorm-seeding": "^1.6.1",
     "uuidv4": "^6.2.12"
   },
   "devDependencies": {

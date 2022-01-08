@@ -22,7 +22,6 @@ describe("Create DDD Controller", () => {
         const response = await request(app)
             .post("/create/ddd")
             .send(dddUser)
-        console.log('respownse', response.body)
         expect(response.status).toBe(201);
         expect(response.body).toHaveProperty("id");
         expect(response.body.code).toEqual(dddUser.code);

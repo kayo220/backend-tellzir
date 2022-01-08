@@ -16,7 +16,6 @@ export class CreatePlanController {
                 name,
                 free_time_limit
             })
-            console.log(plan);
             return response.status(201).json(ViewPlan.render(plan));
         } catch (err) {
             return response.status(400).json({

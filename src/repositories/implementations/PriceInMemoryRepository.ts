@@ -30,7 +30,6 @@ export class PriceINMemoryRepository implements IPriceRepository {
     async searchPrice(fromCode: string, toCode: string): Promise<Price> {
         const price = this.prices.find(element =>
             (element.from.code == fromCode && element.to.code == toCode))
-        console.log("PRICE IN SEARCH:> ", price)
         return price;
     }
     async list(): Promise<Price[]> {

@@ -14,7 +14,6 @@ export class Plan {
 
 
     constructor(props: Omit<Plan, 'id'>, id?: string) {
-        console.log(props)
         Object.assign(this, props)
         if (!this.id) {
             this.id = v4();

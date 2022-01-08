@@ -16,7 +16,6 @@ export class CreatePriceController {
                 to,
                 charge
             })
-            console.log(plan);
             return response.status(201).json(ViewPrice.render(plan));
         } catch (err) {
             return response.status(400).json({

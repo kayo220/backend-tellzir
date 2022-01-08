@@ -1,8 +1,11 @@
 {
     "type": "sqlite",
-    "database": "./src/database/test_database.sqlite",
+    "database": "./src/database/database.sqlite",
     "migrations": [
         "./src/database/migrations/*.ts"
+    ],
+    "seeds": [
+        "./src/database/seeds/*.ts"
     ],
     "entities": [
         "./src/entities/*.ts"

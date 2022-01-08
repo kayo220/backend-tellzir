@@ -12,7 +12,6 @@ export class CreateDDDController {
         const { code } = request.body
         try {
             const ddd = await this.createDDDUseCase.execute({ code })
-            console.log(ddd);
             return response.status(201).json(ViewDDD.render(ddd));
         } catch (err) {
             return response.status(400).json({

@@ -42,7 +42,6 @@ export class PriceSqliteRepository implements IPriceRepository {
     }
     async searchPrice(from: string, to: string): Promise<any> {
         const priceRepository = getRepository('prices');
-        console.log(`From ${from} to ${to}`)
         const price = await priceRepository.findOne({
             relations: ['from', 'to'],
             where: {

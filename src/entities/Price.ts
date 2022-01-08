@@ -22,7 +22,6 @@ export class Price {
     constructor(props: Omit<Price, 'id'>, id?: string) {
         Object.assign(this, props)
         if (!this.id) {
-            console.log("Atribuição de ID")
             this.id = v4();
         }
     }
