@@ -1,4 +1,4 @@
-# Tellzir
+# Tellzir - Backend
 ## Processo Seletivo - Vizir (Kayo Costa)
 
 O Tellzir-FaleMais é um sistema responsável por disponibilizar trasparência para os usuários em relação aos valores cobrados através de ligações utilizando a Discagem Direta a Distância (DDD). Através dele, um cliente da empresa consegue simular a cobrança com e sem o uso de uma franquia (plano).
