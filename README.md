@@ -8,7 +8,7 @@ O Tellzir-FaleMais é um sistema responsável por disponibilizar trasparência p
 - Criação de DDD
 - Criação de Plano
 - Criação de tarifação entre DDDs
-- Realização de simualão de chamada (com e sem uso de plano)
+- Realização de simualação de cobrança de chamada (com e sem uso de plano)
 - Listagem de DDD, Plano e tarifações
 
 ## Principais Tecnologias Utilizadas
