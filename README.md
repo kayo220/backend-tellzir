@@ -3,6 +3,8 @@
 
 O Tellzir-FaleMais é um sistema responsável por disponibilizar trasparência para os usuários em relação aos valores cobrados através de ligações utilizando a Discagem Direta a Distância (DDD). Através dele, um cliente da empresa consegue simular a cobrança com e sem o uso de uma franquia (plano).
 
+[Projeto online](https://tellzir-frontend-kayo.herokuapp.com/): Pode demorar um pouco para carregar!
+
 ## Funcionalidades
 
 - Criação de DDD
